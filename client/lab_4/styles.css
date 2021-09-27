@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:link {
+    color: white;
+  }
+.top-container{
+    color: black;
+    background-color:seagreen;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.top{
+    width:900px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login{
+    margin-left: 20px;
+}
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+  
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+.carousel {
+    overflow: hidden;
+    max-width: 300px;
+    position: relative;
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+    display: none;
+}
+
+.carousel .carousel_item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.carousel .carousel_item--visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel_actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.photo-grid-container .carousel_actions button {
+    font-size: 1.5em;
+    border-width: medium;
+    background-color: lightgray;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+
+.photo-grid-container .carousel_actions button:focus {
+    background-color: orange;
+    border-color: teal;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-one,
+.footer-three {
+    background-color: #5995DA;
+    flex: inital;
+    width: 300px;
+}
+
+.signup{
+    margin-left: auto;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
