@@ -29,12 +29,12 @@ body {
 
 .wrapper {
   display: flex;
-  position: relative;
 }
 
 .container {
   max-width: 960px;
   margin-top: 25px;
+  padding-top: 25px;
 }
 
 
